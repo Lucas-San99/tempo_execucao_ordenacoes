@@ -1,1 +1,0 @@
-# tempo_execucao_ordenacoes
