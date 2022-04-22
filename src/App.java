@@ -96,7 +96,7 @@ public class App {
 
         System.out.println("==============================/ /==============================");
         System.out.println(valTest + " Vetor de " + tamVet + " posicoes\n");
-       
+
         for (int i = 0; i < 50; i++) {
             int[] desordenado = gerarVetor(tamVet, 0.05);
             // Ordenacao por bolha
@@ -146,19 +146,20 @@ public class App {
         }
         System.out.println(">>>>>>>  Ordenando por quicksort demorou em media: " + (mediaQuick / 2)
                 + " nanosegundos \n\n");
-        System.out.println(">>>>>>>  Usando o Quicksort para no vetor reordenado, demorou em media: " + (mediaQuickOrdenado / 2)
-                + " nanosegundos \n\n");
+        System.out.println(
+                ">>>>>>>  Usando o Quicksort para no vetor reordenado, demorou em media: " + (mediaQuickOrdenado / 2)
+                        + " nanosegundos \n\n");
 
     }
 
     public static void main(String[] args) throws Exception {
         limparTela();
-        /*
-         * PrimeiraFaseDeTestes(62500, "TESTE 1: ");
-         * PrimeiraFaseDeTestes(125000, "TESTE 2: ");
-         * PrimeiraFaseDeTestes(250000, "TESTE 3: ");
-         * PrimeiraFaseDeTestes(375000, "TESTE 4: ");
-         */
+
+        PrimeiraFaseDeTestes(62500, "TESTE 1: ");
+        PrimeiraFaseDeTestes(125000, "TESTE 2: ");
+        PrimeiraFaseDeTestes(250000, "TESTE 3: ");
+        PrimeiraFaseDeTestes(375000, "TESTE 4: ");
+
         SegundaFaseDeTestes(375000, "TESTE UNICO: ");
     }
 }
